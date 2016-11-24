@@ -13,8 +13,7 @@
 		/// <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
 		protected override void Dispose(bool disposing)
 		{
-			if (disposing && (components != null))
-			{
+			if(disposing && (components != null)) {
 				components.Dispose();
 			}
 			base.Dispose(disposing);
@@ -75,6 +74,8 @@
 			this.uint16ToolStripButton = new ReClassNET.UI.TypeToolStripButton();
 			this.uint8ToolStripButton = new ReClassNET.UI.TypeToolStripButton();
 			this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+			this.boolToolStripButton = new ReClassNET.UI.TypeToolStripButton();
+			this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
 			this.bitFieldToolStripButton = new ReClassNET.UI.TypeToolStripButton();
 			this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
 			this.floatToolStripButton = new ReClassNET.UI.TypeToolStripButton();
@@ -191,55 +192,57 @@
 			// toolStrip
 			// 
 			this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.attachToProcessToolStripButton,
-            this.toolStripSeparator6,
-            this.openProjectToolStripButton,
-            this.saveToolStripButton,
-            this.toolStripSeparator7,
-            this.newClassToolStripButton,
-            this.addBytesToolStripDropDownButton,
-            this.insertBytesToolStripDropDownButton,
-            this.toolStripSeparator8,
-            this.hex64ToolStripButton,
-            this.hex32ToolStripButton,
-            this.hex16ToolStripButton,
-            this.hex8ToolStripButton,
-            this.toolStripSeparator9,
-            this.int64ToolStripButton,
-            this.int32ToolStripButton,
-            this.int16ToolStripButton,
-            this.int8ToolStripButton,
-            this.toolStripSeparator10,
-            this.uint64ToolStripButton,
-            this.uint32ToolStripButton,
-            this.uint16ToolStripButton,
-            this.uint8ToolStripButton,
-            this.toolStripSeparator11,
-            this.bitFieldToolStripButton,
-            this.toolStripSeparator18,
-            this.floatToolStripButton,
-            this.doubleToolStripButton,
-            this.toolStripSeparator12,
-            this.vec4ToolStripButton,
-            this.vec3ToolStripButton,
-            this.vec2ToolStripButton,
-            this.mat44ToolStripButton,
-            this.mat34ToolStripButton,
-            this.mat33ToolStripButton,
-            this.toolStripSeparator13,
-            this.utf8TextToolStripButton,
-            this.utf8TextPtrToolStripButton,
-            this.utf16TextToolStripButton,
-            this.utf16TextPtrToolStripButton,
-            this.toolStripSeparator14,
-            this.classInstanceToolStripButton6,
-            this.classPtrToolStripButton,
-            this.toolStripSeparator15,
-            this.arrayToolStripButton,
-            this.ptrArrayToolStripButton,
-            this.vtableToolStripButton,
-            this.fnPtrToolStripButton,
-            this.toolStripSeparator19});
+			this.attachToProcessToolStripButton,
+			this.toolStripSeparator6,
+			this.openProjectToolStripButton,
+			this.saveToolStripButton,
+			this.toolStripSeparator7,
+			this.newClassToolStripButton,
+			this.addBytesToolStripDropDownButton,
+			this.insertBytesToolStripDropDownButton,
+			this.toolStripSeparator8,
+			this.hex64ToolStripButton,
+			this.hex32ToolStripButton,
+			this.hex16ToolStripButton,
+			this.hex8ToolStripButton,
+			this.toolStripSeparator9,
+			this.int64ToolStripButton,
+			this.int32ToolStripButton,
+			this.int16ToolStripButton,
+			this.int8ToolStripButton,
+			this.toolStripSeparator10,
+			this.uint64ToolStripButton,
+			this.uint32ToolStripButton,
+			this.uint16ToolStripButton,
+			this.uint8ToolStripButton,
+			this.toolStripSeparator11,
+			this.boolToolStripButton,
+			this.toolStripSeparator20,
+			this.bitFieldToolStripButton,
+			this.toolStripSeparator18,
+			this.floatToolStripButton,
+			this.doubleToolStripButton,
+			this.toolStripSeparator12,
+			this.vec4ToolStripButton,
+			this.vec3ToolStripButton,
+			this.vec2ToolStripButton,
+			this.mat44ToolStripButton,
+			this.mat34ToolStripButton,
+			this.mat33ToolStripButton,
+			this.toolStripSeparator13,
+			this.utf8TextToolStripButton,
+			this.utf8TextPtrToolStripButton,
+			this.utf16TextToolStripButton,
+			this.utf16TextPtrToolStripButton,
+			this.toolStripSeparator14,
+			this.classInstanceToolStripButton6,
+			this.classPtrToolStripButton,
+			this.toolStripSeparator15,
+			this.arrayToolStripButton,
+			this.ptrArrayToolStripButton,
+			this.vtableToolStripButton,
+			this.fnPtrToolStripButton,
+			this.toolStripSeparator19});
 			this.toolStrip.Location = new System.Drawing.Point(0, 24);
 			this.toolStrip.Name = "toolStrip";
 			this.toolStrip.Size = new System.Drawing.Size(1141, 25);
@@ -300,14 +303,14 @@
 			// 
 			this.addBytesToolStripDropDownButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.addBytesToolStripDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.add4BytesToolStripMenuItem,
-            this.add8BytesToolStripMenuItem,
-            this.add64BytesToolStripMenuItem,
-            this.add256BytesToolStripMenuItem,
-            this.add1024BytesToolStripMenuItem,
-            this.add2048BytesToolStripMenuItem,
-            this.add4096BytesToolStripMenuItem,
-            this.addXBytesToolStripMenuItem});
+			this.add4BytesToolStripMenuItem,
+			this.add8BytesToolStripMenuItem,
+			this.add64BytesToolStripMenuItem,
+			this.add256BytesToolStripMenuItem,
+			this.add1024BytesToolStripMenuItem,
+			this.add2048BytesToolStripMenuItem,
+			this.add4096BytesToolStripMenuItem,
+			this.addXBytesToolStripMenuItem});
 			this.addBytesToolStripDropDownButton.Image = global::ReClassNET.Properties.Resources.B16x16_Button_Add_Bytes_X;
 			this.addBytesToolStripDropDownButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.addBytesToolStripDropDownButton.Name = "addBytesToolStripDropDownButton";
@@ -389,14 +392,14 @@
 			// 
 			this.insertBytesToolStripDropDownButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.insertBytesToolStripDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.insert4BytesToolStripMenuItem,
-            this.insert8BytesToolStripMenuItem,
-            this.insert64BytesToolStripMenuItem,
-            this.insert256BytesToolStripMenuItem,
-            this.insert1024BytesToolStripMenuItem,
-            this.insert2048BytesToolStripMenuItem,
-            this.insert4096BytesToolStripMenuItem,
-            this.insertXBytesToolStripMenuItem});
+			this.insert4BytesToolStripMenuItem,
+			this.insert8BytesToolStripMenuItem,
+			this.insert64BytesToolStripMenuItem,
+			this.insert256BytesToolStripMenuItem,
+			this.insert1024BytesToolStripMenuItem,
+			this.insert2048BytesToolStripMenuItem,
+			this.insert4096BytesToolStripMenuItem,
+			this.insertXBytesToolStripMenuItem});
 			this.insertBytesToolStripDropDownButton.Image = global::ReClassNET.Properties.Resources.B16x16_Button_Insert_Bytes_X;
 			this.insertBytesToolStripDropDownButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.insertBytesToolStripDropDownButton.Name = "insertBytesToolStripDropDownButton";
@@ -626,6 +629,22 @@
 			// 
 			this.toolStripSeparator11.Name = "toolStripSeparator11";
 			this.toolStripSeparator11.Size = new System.Drawing.Size(6, 25);
+			// 
+			// boolToolStripButton
+			// 
+			this.boolToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.boolToolStripButton.Image = global::ReClassNET.Properties.Resources.B16x16_Button_Bool;
+			this.boolToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.boolToolStripButton.Name = "boolToolStripButton";
+			this.boolToolStripButton.Size = new System.Drawing.Size(23, 22);
+			this.boolToolStripButton.ToolTipText = "Bool / BYTE";
+			this.boolToolStripButton.Value = typeof(ReClassNET.Nodes.BoolNode);
+			this.boolToolStripButton.Click += new System.EventHandler(this.memoryTypeToolStripButton_Click);
+			// 
+			// toolStripSeparator20
+			// 
+			this.toolStripSeparator20.Name = "toolStripSeparator20";
+			this.toolStripSeparator20.Size = new System.Drawing.Size(6, 25);
 			// 
 			// bitFieldToolStripButton
 			// 
@@ -869,8 +888,8 @@
 			// statusStrip
 			// 
 			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.processInfoToolStripStatusLabel,
-            this.infoToolStripStatusLabel});
+			this.processInfoToolStripStatusLabel,
+			this.infoToolStripStatusLabel});
 			this.statusStrip.Location = new System.Drawing.Point(0, 573);
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.Size = new System.Drawing.Size(1141, 22);
@@ -892,10 +911,10 @@
 			// mainMenuStrip
 			// 
 			this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.processToolStripMenuItem,
-            this.projectToolStripMenuItem,
-            this.helpToolStripMenuItem});
+			this.fileToolStripMenuItem,
+			this.processToolStripMenuItem,
+			this.projectToolStripMenuItem,
+			this.helpToolStripMenuItem});
 			this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.mainMenuStrip.Name = "mainMenuStrip";
 			this.mainMenuStrip.Size = new System.Drawing.Size(1141, 24);
@@ -904,20 +923,20 @@
 			// fileToolStripMenuItem
 			// 
 			this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.attachToProcessToolStripMenuItem,
-            this.detachToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.openProjectToolStripMenuItem,
-            this.mergeWithProjectToolStripMenuItem,
-            this.clearProjectToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.settingsToolStripMenuItem,
-            this.pluginsToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.quitToolStripMenuItem});
+			this.attachToProcessToolStripMenuItem,
+			this.detachToolStripMenuItem,
+			this.toolStripSeparator1,
+			this.openProjectToolStripMenuItem,
+			this.mergeWithProjectToolStripMenuItem,
+			this.clearProjectToolStripMenuItem,
+			this.toolStripSeparator2,
+			this.saveToolStripMenuItem,
+			this.saveAsToolStripMenuItem,
+			this.toolStripSeparator3,
+			this.settingsToolStripMenuItem,
+			this.pluginsToolStripMenuItem,
+			this.toolStripSeparator5,
+			this.quitToolStripMenuItem});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
 			this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
 			this.fileToolStripMenuItem.Text = "File";
@@ -986,8 +1005,8 @@
 			// 
 			this.saveAsToolStripMenuItem.Image = global::ReClassNET.Properties.Resources.B16x16_Save_As;
 			this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-			this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
+			this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
+			| System.Windows.Forms.Keys.S)));
 			this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
 			this.saveAsToolStripMenuItem.Text = "Save as...";
 			this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
@@ -1029,14 +1048,14 @@
 			// processToolStripMenuItem
 			// 
 			this.processToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.memoryViewerToolStripMenuItem,
-            this.toolStripSeparator17,
-            this.loadSymbolToolStripMenuItem,
-            this.loadSymbolsToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.resumeProcessToolStripMenuItem,
-            this.suspendProcessToolStripMenuItem,
-            this.terminateProcessToolStripMenuItem});
+			this.memoryViewerToolStripMenuItem,
+			this.toolStripSeparator17,
+			this.loadSymbolToolStripMenuItem,
+			this.loadSymbolsToolStripMenuItem,
+			this.toolStripSeparator4,
+			this.resumeProcessToolStripMenuItem,
+			this.suspendProcessToolStripMenuItem,
+			this.terminateProcessToolStripMenuItem});
 			this.processToolStripMenuItem.Name = "processToolStripMenuItem";
 			this.processToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
 			this.processToolStripMenuItem.Text = "Process";
@@ -1102,10 +1121,10 @@
 			// projectToolStripMenuItem
 			// 
 			this.projectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cleanUnusedClassesToolStripMenuItem,
-            this.toolStripSeparator16,
-            this.generateCppCodeToolStripMenuItem,
-            this.generateCSharpCodeToolStripMenuItem});
+			this.cleanUnusedClassesToolStripMenuItem,
+			this.toolStripSeparator16,
+			this.generateCppCodeToolStripMenuItem,
+			this.generateCSharpCodeToolStripMenuItem});
 			this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
 			this.projectToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
 			this.projectToolStripMenuItem.Text = "Project";
@@ -1142,7 +1161,7 @@
 			// helpToolStripMenuItem
 			// 
 			this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+			this.aboutToolStripMenuItem});
 			this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
 			this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.helpToolStripMenuItem.Text = "Help";
@@ -1257,6 +1276,8 @@
 		private UI.TypeToolStripButton uint16ToolStripButton;
 		private UI.TypeToolStripButton uint8ToolStripButton;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+		private UI.TypeToolStripButton boolToolStripButton;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
 		private UI.TypeToolStripButton floatToolStripButton;
 		private UI.TypeToolStripButton doubleToolStripButton;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
@@ -1297,4 +1318,3 @@
 		private System.Windows.Forms.ToolStripMenuItem detachToolStripMenuItem;
 	}
 }
-

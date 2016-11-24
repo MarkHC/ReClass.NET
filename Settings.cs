@@ -133,6 +133,8 @@ namespace ReClassNET
 		public string TypeInt32 { get; set; } = "int32_t";
 		public string TypeInt64 { get; set; } = "int64_t";
 
+		public string TypeBool { get; set; } = "bool";
+
 		public string TypeUInt8 { get; set; } = "uint8_t";
 		public string TypeUInt16 { get; set; } = "uint16_t";
 		public string TypeUInt32 { get; set; } = "uint32_t";

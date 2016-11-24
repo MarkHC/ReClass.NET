@@ -46,6 +46,8 @@
 			this.uInt16ToolStripMenuItem = new ReClassNET.UI.TypeToolStripMenuItem();
 			this.uInt8ToolStripMenuItem = new ReClassNET.UI.TypeToolStripMenuItem();
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+			this.boolToolStripMenuItem = new ReClassNET.UI.TypeToolStripMenuItem();
+			this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
 			this.bitsToolStripMenuItem = new ReClassNET.UI.TypeToolStripMenuItem();
 			this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
 			this.floatToolStripMenuItem = new ReClassNET.UI.TypeToolStripMenuItem();
@@ -139,9 +141,11 @@
             this.uInt64ToolStripMenuItem,
             this.uInt32ToolStripMenuItem,
             this.uInt16ToolStripMenuItem,
-            this.uInt8ToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.bitsToolStripMenuItem,
+			this.uInt8ToolStripMenuItem,
+			this.toolStripSeparator5,
+			this.boolToolStripMenuItem,
+			this.toolStripSeparator14,
+			this.bitsToolStripMenuItem,
             this.toolStripSeparator11,
             this.floatToolStripMenuItem,
             this.doubleToolStripMenuItem,
@@ -293,6 +297,20 @@
 			// 
 			this.toolStripSeparator5.Name = "toolStripSeparator5";
 			this.toolStripSeparator5.Size = new System.Drawing.Size(170, 6);
+			// 
+			// boolToolStripMenuItem
+			// 
+			this.boolToolStripMenuItem.Image = global::ReClassNET.Properties.Resources.B16x16_Button_Bool;
+			this.boolToolStripMenuItem.Name = "boolToolStripMenuItem";
+			this.boolToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.boolToolStripMenuItem.Text = "Bool";
+			this.boolToolStripMenuItem.Value = typeof(ReClassNET.Nodes.BoolNode);
+			this.boolToolStripMenuItem.Click += new System.EventHandler(this.memoryTypeToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator14
+			// 
+			this.toolStripSeparator14.Name = "toolStripSeparator14";
+			this.toolStripSeparator14.Size = new System.Drawing.Size(170, 6);
 			// 
 			// bitsToolStripMenuItem
 			// 
@@ -794,6 +812,8 @@
 		private UI.TypeToolStripMenuItem uInt16ToolStripMenuItem;
 		private UI.TypeToolStripMenuItem uInt8ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+		private UI.TypeToolStripMenuItem boolToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
 		private UI.TypeToolStripMenuItem floatToolStripMenuItem;
 		private UI.TypeToolStripMenuItem doubleToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;

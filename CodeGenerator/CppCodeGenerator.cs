@@ -22,6 +22,7 @@ namespace ReClassNET.CodeGenerator
 			[typeof(Matrix3x3Node)] = Program.Settings.TypeMatrix3x3,
 			[typeof(Matrix3x4Node)] = Program.Settings.TypeMatrix3x4,
 			[typeof(Matrix4x4Node)] = Program.Settings.TypeMatrix4x4,
+			[typeof(BoolNode)] = Program.Settings.TypeBool,
 			[typeof(UInt8Node)] = Program.Settings.TypeUInt8,
 			[typeof(UInt16Node)] = Program.Settings.TypeUInt16,
 			[typeof(UInt32Node)] = Program.Settings.TypeUInt32,
